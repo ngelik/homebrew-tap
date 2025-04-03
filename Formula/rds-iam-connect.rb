@@ -1,23 +1,23 @@
 class RdsIamConnect < Formula
     desc "CLI tool for securely connecting to AWS RDS clusters using IAM authentication"
     homepage "https://github.com/ngelik/rds-iam-connect"
-    version "0.1.0" # Replace with your actual version
+    version "0.1.1" # Replace with your actual version
   
     if OS.mac?
       if Hardware::CPU.arm?
         url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.0/rds-iam-connect-darwin-arm64"
-        sha256 "sha256sum" # Replace with actual SHA256 sum of the ARM64 binary
+        sha256 "" # Replace with actual SHA256 sum of the ARM64 binary
       else
         url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.0/rds-iam-connect-darwin-amd64"
-        sha256 "sha256sum" # Replace with actual SHA256 sum of the AMD64 binary
+        sha256 "" # Replace with actual SHA256 sum of the AMD64 binary
       end
     elsif OS.linux?
       if Hardware::CPU.arm?
         url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.0/rds-iam-connect-linux-arm64"
-        sha256 "sha256sum" # Replace with actual SHA256 sum of the Linux ARM64 binary
+        sha256 "" # Replace with actual SHA256 sum of the Linux ARM64 binary
       else
         url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.0/rds-iam-connect-linux-amd64"
-        sha256 "sha256sum" # Replace with actual SHA256 sum of the Linux AMD64 binary
+        sha256 "" # Replace with actual SHA256 sum of the Linux AMD64 binary
       end
     end
   
