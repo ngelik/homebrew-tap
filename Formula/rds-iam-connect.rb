@@ -1,7 +1,7 @@
 class RdsIamConnect < Formula
     desc "CLI tool for securely connecting to AWS RDS clusters using IAM authentication"
     homepage "https://github.com/ngelik/rds-iam-connect"
-    version "0.1.1" # Replace with your actual version
+    version "0.1.2" # Replace with your actual version
   
     if OS.mac?
       if Hardware::CPU.arm?
