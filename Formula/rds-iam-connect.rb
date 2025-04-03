@@ -1,30 +1,17 @@
 class RdsIamConnect < Formula
     desc "CLI tool for securely connecting to AWS RDS clusters using IAM authentication"
     homepage "https://github.com/ngelik/rds-iam-connect"
-    version "0.1.2" # Replace with your actual version
+    version "0.1.3" # Replace with your actual version
   
     if OS.mac?
       if Hardware::CPU.arm?
-        url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.0/rds-iam-connect-darwin-arm64"
-        sha256 "" # Replace with actual SHA256 sum of the ARM64 binary
-      else
-        url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.0/rds-iam-connect-darwin-amd64"
-        sha256 "" # Replace with actual SHA256 sum of the AMD64 binary
-      end
-    elsif OS.linux?
-      if Hardware::CPU.arm?
-        url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.0/rds-iam-connect-linux-arm64"
-        sha256 "" # Replace with actual SHA256 sum of the Linux ARM64 binary
-      else
-        url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.0/rds-iam-connect-linux-amd64"
-        sha256 "" # Replace with actual SHA256 sum of the Linux AMD64 binary
-      end
-    end
+        url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.3/rds-iam-connect-darwin-arm64"
+        sha256 ""
   
     depends_on "go" => :build
   
     def install
-      bin.install "rds-iam-connect-#{OS.mac? ? "darwin" : "linux"}-#{Hardware::CPU.arm? ? "arm64" : "amd64"}" => "rds-iam-connect"
+      bin.install "rds-iam-connect-darwin-arm64" => "rds-iam-connect"
     end
   
     def caveats
