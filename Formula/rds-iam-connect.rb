@@ -1,12 +1,12 @@
 class RdsIamConnect < Formula
     desc "CLI tool for securely connecting to AWS RDS clusters using IAM authentication"
     homepage "https://github.com/ngelik/rds-iam-connect"
-    version "0.1.4"
+    version "0.1.5"
   
     if OS.mac?
       if Hardware::CPU.arm?
-        url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.4/rds-iam-connect-darwin-arm64"
-        sha256 ""
+        url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.5/rds-iam-connect-darwin-arm64"
+        sha256 "669bc390dac7755e162593899fd79e896ea6b88be45a5163eaedbb219cb3125d"
       end
     end
   
