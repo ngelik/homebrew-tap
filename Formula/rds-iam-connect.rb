@@ -1,12 +1,14 @@
 class RdsIamConnect < Formula
     desc "CLI tool for securely connecting to AWS RDS clusters using IAM authentication"
     homepage "https://github.com/ngelik/rds-iam-connect"
-    version "0.1.3" # Replace with your actual version
+    version "0.1.4"
   
     if OS.mac?
       if Hardware::CPU.arm?
-        url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.3/rds-iam-connect-darwin-arm64"
+        url "https://github.com/ngelik/rds-iam-connect/releases/download/v0.1.4/rds-iam-connect-darwin-arm64"
         sha256 ""
+      end
+    end
   
     depends_on "go" => :build
   
@@ -29,5 +31,4 @@ class RdsIamConnect < Formula
     test do
       assert_match "rds-iam-connect version #{version}", shell_output("#{bin}/rds-iam-connect --version", 2)
     end
-  end
-  
+end
