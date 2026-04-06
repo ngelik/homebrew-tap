@@ -10,7 +10,7 @@ class Ttsbuddy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.2.0/ttsbuddy_0.2.0_darwin_amd64.zip"
-      sha256 "abf2b3a70d1ff67d512f91725df0edf77331aee63f274e5f2cc6249e5518923e"
+      sha256 "8b0ca5c948d2466ea5d5aa5a5ba8944e6e2c2374af31ef29a52f7c775c95389b"
 
       def install
         bin.install "ttsbuddy"
@@ -18,7 +18,7 @@ class Ttsbuddy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.2.0/ttsbuddy_0.2.0_darwin_arm64.zip"
-      sha256 "b708894649e6418aa5fdbf78b8fdaa0697ea5cb8693a73a8d981f046d74b9821"
+      sha256 "dabd4603aeceaeb47c5dc99f2fa62338b7095aac111c5d16e4f3456fc397599a"
 
       def install
         bin.install "ttsbuddy"
@@ -30,7 +30,7 @@ class Ttsbuddy < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.2.0/ttsbuddy_0.2.0_linux_amd64.tar.gz"
-        sha256 "3f7374caf1dd099361afe2f39f2e29c99827f47198b4291b7ff8a6c3746e8917"
+        sha256 "0333017feef95ffd37e31c7348b561cc50471fffcbdb764d64863aafeffa6405"
 
         def install
           bin.install "ttsbuddy"
@@ -40,7 +40,7 @@ class Ttsbuddy < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.2.0/ttsbuddy_0.2.0_linux_arm64.tar.gz"
-        sha256 "990c7392c9f5a2d9c05d93898389c74242789391f4ec95c4efc6be5498a7e3f5"
+        sha256 "480cc486c3d0b206918baad36f47648f59d5ef72696eb770649832c531f7c993"
 
         def install
           bin.install "ttsbuddy"
