@@ -5,20 +5,20 @@
 class Ttsbuddy < Formula
   desc "TTSBuddy CLI — convert text to speech from the command line"
   homepage "https://ttsbuddy.com"
-  version "0.3.1"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.3.1/ttsbuddy_0.3.1_darwin_amd64.zip"
-      sha256 "2353ed7ad1b91ed8187eab36c2b1d28a95b699b92d53607a318db41cf3843c10"
+      url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.4.0/ttsbuddy_0.4.0_darwin_amd64.zip"
+      sha256 "55ba9d3b9146622e3650c19fbe2b2da2abeac873690b53a3fbfe86b5a1a2e57f"
 
       def install
         bin.install "ttsbuddy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.3.1/ttsbuddy_0.3.1_darwin_arm64.zip"
-      sha256 "834e0b79a5cb2d59f44a1eb76902855555bf14c456f3f4bd292289cba71faf0a"
+      url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.4.0/ttsbuddy_0.4.0_darwin_arm64.zip"
+      sha256 "735a0fb21472e6d3276a19681cf8a48d2b140c8166756cc8ac5de52ba5c5e289"
 
       def install
         bin.install "ttsbuddy"
@@ -29,8 +29,8 @@ class Ttsbuddy < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.3.1/ttsbuddy_0.3.1_linux_amd64.tar.gz"
-        sha256 "8e6b45734bbc90e29e3047b6b855befb2fc8026e1568884957af34088fa5ee9e"
+        url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.4.0/ttsbuddy_0.4.0_linux_amd64.tar.gz"
+        sha256 "ceb5312345091e035a147959e960757deb3348815f3a104807924a77d5113d9d"
 
         def install
           bin.install "ttsbuddy"
@@ -39,8 +39,8 @@ class Ttsbuddy < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.3.1/ttsbuddy_0.3.1_linux_arm64.tar.gz"
-        sha256 "8bb0690e9d29ace3dcd09c586757e5e74e6a8e386dfa9a8b819a87978c4bba51"
+        url "https://github.com/ngelik/ttsbuddy-cli/releases/download/v0.4.0/ttsbuddy_0.4.0_linux_arm64.tar.gz"
+        sha256 "7b8246d138d6d326fa5f49d348aaade21c5fa8fba0547da260d9b7c5b8a1c19e"
 
         def install
           bin.install "ttsbuddy"
